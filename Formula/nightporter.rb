@@ -1,25 +1,25 @@
 class Nightporter < Formula
   desc "Handles your PRs while you're away: an agentic night shift for GitHub and GitLab"
   homepage "https://night-porter.com"
-  version "0.7.0"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/night-porter/nightporter/releases/download/v0.7.0/nightporter-aarch64-apple-darwin.tar.xz"
-      sha256 "bb0c7f7a9aa066ac1a64d1ab6f3249a68c58e916fb1c1262066f3c331eb9a429"
+      url "https://github.com/night-porter/nightporter/releases/download/v0.8.0/nightporter-aarch64-apple-darwin.tar.xz"
+      sha256 "32851f28feb3159f113f551636f1db3be395eb20b15f456b8107ec089745c9fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/night-porter/nightporter/releases/download/v0.7.0/nightporter-x86_64-apple-darwin.tar.xz"
-      sha256 "34a39e039f72c01e191e8f94033070407f2f595961aa08a5f2cb3d3d1fd430cf"
+      url "https://github.com/night-porter/nightporter/releases/download/v0.8.0/nightporter-x86_64-apple-darwin.tar.xz"
+      sha256 "71cb51180379923d3d0160608ec585f3d402b2ad6834d57423702a57d304bb9e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/night-porter/nightporter/releases/download/v0.7.0/nightporter-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "fb8adcd73258eb57515695393ce85120812641c41d64f6790fc0dc34a10ebf83"
+      url "https://github.com/night-porter/nightporter/releases/download/v0.8.0/nightporter-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "4e2c1243bd92ebf27fba1910652a2fd45ff4a56eec207bb063a6af16a1eaa37b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/night-porter/nightporter/releases/download/v0.7.0/nightporter-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "ec7021517314581740d6a5435cac5caa22db95dfb2e2f6dfb23602de0569c344"
+      url "https://github.com/night-porter/nightporter/releases/download/v0.8.0/nightporter-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "8784c6757553b8f11b9955443d689db1feae4204a5c544d848bc26a4e872e75f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
